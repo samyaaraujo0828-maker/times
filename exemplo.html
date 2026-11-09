@@ -1,0 +1,32 @@
+<script>
+
+    const times = [
+        {time:"corinthians", torcida: 33, titulos:88 },
+        {time:"são paulo", torcida: 17, titulos:56 },
+        {time:"palmeiras", torcida: 15, titulos: 43 },
+        {time:"santos", torcida: 12, titulos:90 },
+
+    ]
+
+    const maioresTorcidas = times.filter((t)=> t.torcida > 15)
+    console.log(maioresTorcidas)
+
+    
+    const menoresTorcidas = times.filter((t)=> t.torcida <= 15)
+    console.log(menoresTorcidas)
+
+    const dobrarTorcida = times.map((t)=> t.torcida * 2)
+    console.log(dobrarTorcida)
+
+
+    const tamanhoLista = times.reduce((cont)=> cont+1,0)
+    console.log(tamanhoLista)
+
+
+    const torcida = [33, 17, 15, 12]
+    const somaTorcida = torcida.reduce((soma, torcida)=> soma + torcida, 0 )
+    console.log(somaTorcida)
+
+    console.log(times.length)
+
+</script>
